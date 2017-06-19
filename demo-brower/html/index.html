@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+  <html class="ie8" lang="en-us">
+<![endif]-->
+<!--[if !IE]><!-->
+  <html class="noie" lang="en-us">
+<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+        <!--[if IE]>
+	      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>兼容性</title>
+		<!--External css-->
+		  <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		  <link rel="stylesheet" href="../css/browers.css" />
+		<!--External css-->
+		 
+	</head>
+	<body>
+		<!--content-->
+		  <div class="navbar nav-header new-nav-header" style="background-color:#CA3131;"></div>
+		  <div class="container-fluid new-container">
+		  	<div class="row">
+		  		<div class="col-md-2 red">
+		  			<div class="row">
+		  				
+		  		      <div class="col-md-2 sidebar new-sidebar-border">	
+			  			<!--目录1-按钮-->
+			  			<button class="btn btn-default btn-block border-nor" type="button" data-toggle="collapse" data-target="#forAll" aria-expanded="false" aria-controls="forAll">
+			  				基本技巧
+			  		    </button>
+			  			<!--目录1-内容-->
+			  			<div class="collapse new-collapse" id="forAll">
+			  			  <ul class="nav nav-pills nav-stacked">
+			  				<li><a href="#reset-css">1.重置浏览器默认样式</a></li>
+			  				<li><a href="#ie-mate">2.IE 兼容模式</a></li>
+			  				<li><a href="#clearfix">3.清除浮动</a></li>
+			  				<li><a href="#css-hack">4.浏览器常用的hack</a></li>
+			  			  </ul>
+			  			</div>
+			  			<!--目录1-内容-->
+			  			
+			  			<!--目录2-按钮-->
+			  			<button class="btn btn-default btn-block border-nor" type="button" data-toggle="collapse" data-target="#forIE" aria-expanded="false" aria-controls="forIE">
+			  				常见问题及解决方案
+			  		    </button>
+			  			<!--目录2-内容-->
+			  			<div class="collapse new-collapse" id="forIE">
+			  			  <ul class="nav nav-pills nav-stacked">
+			  			  <li><a href="#">ie6下面元素浮动后显示margin边距加倍</a></li>
+			  				<li><a href="#">ie6浮动和非浮动间距bug</a></li>
+			  				<li><a href="#ie7-pfix">IE7以下版本数值和中文混写导致行内元素错位问题</a></li>
+			  				<li><a href="#">ie7以下版本数值和中文混写导致错位</a></li>
+			  				<li><a href="#">图片或行内块（inline-block）元素并列空隙bug</a></li>
+			  				<!--<li><a href="#">IE8浮动高度自适应问题</a></li>-->
+			  				
+			  			  </ul>
+			  			</div>
+			  			<!--目录2-内容-->
+		          
+		          <!--目录3-按钮-->
+			  			<button class="btn btn-default btn-block border-nor" type="button" data-toggle="collapse" data-target="#forLink" aria-expanded="false" aria-controls="forLink">
+			  				参考
+			  		    </button>
+			  			<!--目录3-内容-->
+			  			<div class="collapse new-collapse" id="forLink">
+			  			  <ul class="nav nav-pills nav-stacked">
+			  			  <li><a href="http://www.w3cplus.com/css/browser-hacks.html" title="Airen的博客">主流浏览器的Hack写法</a></li>
+			  				<li><a href="http://www.webdevout.net/css-hacks">CSS Hack</a></li>
+                <li><a href="http://www.css88.com/book/css/experience/index.htm">问题和经验</a></li>
+                <li><a href="https://www.paulirish.com/2009/browser-specific-css-hacks/">Browser CSS Hacks</a></li>
+			  			  </ul>
+			  			</div>
+			  			<!--目录3-内容-->
+		  			 </div><!-- end of sidebar-->
+		  		    </div>
+		  		    
+		  	    </div><!-- end of col-md-2-->
+		        
+		  		<div class="col-md-10 col-md-offset-2 main">
+<!--**************************Base*********************************************-->
+		  			
+		  			<!--重置浏览器样式1-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="reset-css">重置浏览器默认样式</h4>
+		  				<pre class="info">在不同的浏览器中标签的默认样式是不一样的。统一清除了一些默认样式后方便我们统一设计。一般的在网上搜索reset.css就能找到很多不同版本的源码，看个人使用习惯。当然不适用也是可以的。右边是在网上找的我常用的。
+</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">/*重置浏览器样式*/
+html,body,h1,h2,h3,h4,h5,h6,div,dl,
+dt,dd,ul,ol,li,p,blockquote,pre,hr,
+figure,table,caption,th,td,form,fieldset,
+legend,input,button,textarea,menu{
+	margin:0;
+	padding:0;
+}
+
+header,footer,section,article,aside,
+nav,hgroup,address,figure,figcaption,
+menu,details{
+	display:block;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+body{
+	background:#fff;
+}
+body,textarea,input,button,select,keygen,legend{
+	font: 16px/24px Microsoft YaHei,Arial,\\5B8B\4F53,Arial Narrow;
+	/* color:#333; */
+	outline:0;
+}
+a,a:hover{
+	color:#333;
+}
+li{
+	list-style:none;
+}
+
+/*不常用*/
+caption,th{
+	text-align:left;
+	font-weight:normal;
+}
+html,body,fieldset,img,iframe,abbr{
+	border:0;
+}
+a,button{
+	cursor:pointer;
+}
+h1,h2,h3,h4,h5,h6,em,strong,b{
+	font-weight:bold;
+}
+del,ins,u,s,a,a:hover{
+	text-decoration:none;
+}
+i,cite,em,var,address,dfn{
+	font-style:normal;
+}
+[hidefocus],summary{
+	outline:0;
+}
+h1,h2,h3,h4,h5,h6,small{
+	font-size:100%;
+}
+sup,sub{
+	font-size:83%;
+}
+pre,code,kbd,samp{
+	font-family:inherit;
+}
+q:before,q:after{
+	content:none;
+}
+textarea{
+	overflow:auto;
+	resize:none;
+}
+label,summary{
+	cursor:default;
+}</pre>
+		  			</div>
+		  			
+		  			<!--IE兼容模式2-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="ie-mate">IE 兼容模式</h4>
+		  				<pre class="info">IE 支持通过特定的 <code>&lt;meta&gt;</code>标签来确定绘制当前页面所应该采用的 IE 版本。除非有强烈的特殊需求，否则最好是设置为 edge mode，从而通知 IE 采用其所支持的最新的模式。
+  chrome=1是chrome为IE浏览器用户写的一个外挂，它的意思是如果用户安装了这个外挂，那么在IE浏览器可以用谷歌内盒渲染。当然这个chrome=1也可以不写</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;</pre>
+		  			</div>
+		  			
+		  			<!--清除浮动3-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="clearfix"><a href="clearfix.html">清除浮动</a></h4>
+		  				<pre class="info">子元素浮动后出现的问题
+一、 ie7以下版本模块浮动后不会脱离文档流，后面的块元素不会被它覆盖掉。但是后面的块元素也会紧跟浮动显示在其内容的后面
+二、其他浏览器版本浮动后，会从当前文档流脱离出来。后面如果紧跟的是块元素的换会被其覆盖。
+三、父级元素高度不能自适应
+所以为了元素浮动带来的问题需要清除浮动
+方式1：在浮动元素的后面加上一个空的div 然后添加clear:both;
+方式2：父级元素用overflow:hidden;
+方式3：设置一个父级的块级伪元素，添加clear:both;
+右边给出一个兼容性较好的方式</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">/* Clear float */
+.clearfix {
+    *zoom: 1;/*给IE7以下版本识别的清楚浮动的（因为它们不识别after 这个伪类），这些版本的IE触发haslayout便可以清除浮动*/
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;/*是块级即可*/
+    line-height: 0;
+    content: "";/*必要*/
+}
+.clearfix::after {
+    clear: both;/*必要*/
+}</pre>
+		  			</div>
+		  			
+		  			<!--浏览器常用的hack汇总4-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="css-hack"><a href="css-hack.html">浏览器常用的hack</a></h4>
+		  				<pre class="info">Hack是针对不同的浏览器去写不同的CSS样式，从而让各浏览器能达到一致的渲染效果，那么针对不同的浏览器写不同的CSS CODE的过程，就叫CSS HACK</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">
+<a href="css-hack.html/#ie">IE常用的hack</a>
+<a href="css-hack.html/#firefox">Firefox常用的hack</a>
+<a href="css-hack.html/#webkit">webkit常用的hack</a>
+<a href="css-hack.html/#opera">欧朋常用的hack</a>
+<a href="ie-ifhack.html/#ie">HTML条件hack</a>
+		  				</pre>
+		  			</div>
+		  
+<!--***************************question********************************************-->
+						<!--ie6下面元素浮动后显示margin边距加倍2-->
+					  <div class="col-md-6 fix-info">
+					  				<h4 class="title" id="ie6-margin">ie6下面元素浮动后显示margin边距加倍的问题</h4>
+					  				<pre class="info">这是ie6一个著名的bug，当一个元素向一边浮动时，其它同一个方向如果有margin的话，ie6就会产生双倍的margin。例 如：&lt;div style="float: left;margin-left: 10px;"&gt;&lt;/div&gt;在ie6下显示会有margin-left:20px的距离
+			用ie6的hack解决</pre>
+					  			</div>
+					  <div class="col-md-6 fix-code">
+					  				<pre class="coding">div{
+			      	width: 200px;
+			      	height: 30px;
+			      	background: pink;
+			      	float: left;
+			      	margin-left: 10px;
+			      	_margin-left: 5px;/*方式1*/
+			        _display: inline;  /*方式2*/
+			     }</pre>
+					  			</div>
+					  
+					  <!--浮动和非浮动间距bug3-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="ie6-float"><a href="ie6-float-space.html">ie6以下版本的浮动元素和非浮动元素间出现3像素BUG</a></h4>
+		  				<pre class="info">问题说明：这也是ie6一个著名的bug,当一个元素浮动时，同级别的文字没有浮动，在ie6下它们之间就会产生3个像素的bug。例 如：摘要摘要摘要摘要,图片和文字就会出现3像素
+解决方法：
+  方法一：两个元素都浮动
+  方法二：这种设计时一般图片和文字要有间隙的，
+        做个ie6的 hack就行 _margin-left: -3px;</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">
+       
+       .info{/* 在后面的非浮动元素上面设置以下属性*/
+       	/* 方法一： */
+       	/* float: left; */
+       	/* 方法二： */
+       	_margin-left: -3px;
+       }
+</pre>
+		  			</div>
+		  				
+		  			<!--数值和中文混写导致错位1-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="ie7-pfix"><a href="ie7ie6-line-height.html">数值和中文混写导致错位</a></h4>
+		  				<pre class="info">本质上是混合的字体到时baseline不统一形成的，所以只要将其设置成块元素设置高度或者行高即可解决</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding"><a href="ie7ie6-line-height.html">数值和中文混写导致错位</a></pre>
+		  			</div>
+		  		
+		  			<!--IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG-4-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="ie7ie6-li-space"><a href="ie7low-liFloat-bug.html">IE7-li之间产生的空白间隙的BUG</a></h4>
+		  				<pre class="info">IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">请点击链接有惊喜！</pre>
+		  			</div>
+
+            <!--图片或行内块（inline-block）元素并列空隙bug9-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="img-space"><a href="img-space.html">图片或行内块（inline-block）元素并列空隙bug</a></h4>
+		  				<pre class="info">当多个img或inline-block标签并列显示时周围元素周围有空白空隙</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">请点击链接了解更多！</pre>
+		  			</div>
+		  			
+		  			<!--问题详情-->
+		  			<!--<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="ie-mate">模板</h4>
+		  				<pre class="info">info</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">code</pre>
+		  			</div>-->
+		  			
+		  		</div>
+		  	</div>
+		  </div>
+		<!--content-->
+		<!--External JS-->
+		  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--External JS-->
+	</body>
+</html>
