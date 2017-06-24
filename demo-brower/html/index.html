@@ -50,12 +50,13 @@
 			  			<!--目录2-内容-->
 			  			<div class="collapse new-collapse" id="forIE">
 			  			  <ul class="nav nav-pills nav-stacked">
-			  			  <li><a href="#">ie6下面元素浮动后显示margin边距加倍</a></li>
-			  				<li><a href="#">ie6浮动和非浮动间距bug</a></li>
+			  			  <li><a href="#ie6-margin">ie6下面元素浮动后显示margin边距加倍</a></li>
+			  				<li><a href="#ie6-float">ie6浮动和非浮动间距bug</a></li>
 			  				<li><a href="#ie7-pfix">IE7以下版本数值和中文混写导致行内元素错位问题</a></li>
-			  				<li><a href="#">ie7以下版本数值和中文混写导致错位</a></li>
-			  				<li><a href="#">图片或行内块（inline-block）元素并列空隙bug</a></li>
+			  				<li><a href="#img-space">图片或行内块（inline-block）元素并列空隙bug</a></li>
+			  				<li><a href="#chrome-font-size">Chrome最小字体问题</a></li>
 			  				<!--<li><a href="#">IE8浮动高度自适应问题</a></li>-->
+			  				
 			  				
 			  			  </ul>
 			  			</div>
@@ -214,11 +215,11 @@ label,summary{
 		  			</div>
 		  			<div class="col-md-6 fix-code">
 		  				<pre class="coding">
-<a href="css-hack.html/#ie">IE常用的hack</a>
-<a href="css-hack.html/#firefox">Firefox常用的hack</a>
-<a href="css-hack.html/#webkit">webkit常用的hack</a>
-<a href="css-hack.html/#opera">欧朋常用的hack</a>
-<a href="ie-ifhack.html/#ie">HTML条件hack</a>
+<a href="css-hack.html#ie">IE常用的hack</a>
+<a href="css-hack.html#firefox">Firefox常用的hack</a>
+<a href="css-hack.html#webkit">webkit常用的hack</a>
+<a href="css-hack.html#opera">欧朋常用的hack</a>
+<a href="ie-ifhack.html">HTML条件hack</a>
 		  				</pre>
 		  			</div>
 		  
@@ -230,15 +231,16 @@ label,summary{
 			用ie6的hack解决</pre>
 					  			</div>
 					  <div class="col-md-6 fix-code">
-					  				<pre class="coding">div{
-			      	width: 200px;
-			      	height: 30px;
-			      	background: pink;
-			      	float: left;
-			      	margin-left: 10px;
-			      	_margin-left: 5px;/*方式1*/
-			        _display: inline;  /*方式2*/
-			     }</pre>
+					  				<pre class="coding">
+div{
+  width: 200px;
+  height: 30px;
+  background: pink;
+  float: left;
+  margin-left: 10px;
+  _margin-left: 5px;/*方式1*/
+  _display: inline;  /*方式2*/
+ }</pre>
 					  			</div>
 					  
 					  <!--浮动和非浮动间距bug3-->
@@ -288,6 +290,29 @@ label,summary{
 		  			<div class="col-md-6 fix-code">
 		  				<pre class="coding">请点击链接了解更多！</pre>
 		  			</div>
+		  			
+		  			<!--chrome浏览器font-size<12px-->
+		  			<div class="col-md-6 fix-info">
+		  				<h4 class="title" id="chrome-font-size">chrome浏览器font-size问题</h4>
+		  				<pre class="info">
+Chrome 27之前的中文版桌面浏览器会默认设定页面的最小字号是12px的一个bug
+在最新版的Chrome已经修复。</pre>
+		  			</div>
+		  			<div class="col-md-6 fix-code">
+		  				<pre class="coding">解决方案：
+ /*旧方案：*/
+/*Chrome 27正式取消了-webkit-text-size-adjust属性的支持.现在一般不用这个方案会引发其它问题*/
+ .classsname{ -webkit-text-size-adjust:none; font-size:9px; } 
+ 
+ /*方案2: */
+ .chrome_adjust {
+    font-size: 9px;
+    -webkit-transform: scale(0.75);
+    -o-transform: scale(1);    //针对能识别-webkit的opera browser设置
+}
+		  				</pre>
+		  			</div>
+		  			
 		  			
 		  			<!--问题详情-->
 		  			<!--<div class="col-md-6 fix-info">
