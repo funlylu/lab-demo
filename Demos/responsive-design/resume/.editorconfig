@@ -1,0 +1,15 @@
+#editorconfig.org
+
+#最顶层配置文件
+root = true
+
+#文件通配符，表示所有的文件都应用一下规则
+[*]
+charset = utf-8 
+indent_size = 4
+indent_style = space #四个空格作为缩进
+insert_final_newline = true #以文件以空白行结尾
+trim_trailling_whitespace = false
+
+[*.md]
+trim_trailling_whitespace = false
