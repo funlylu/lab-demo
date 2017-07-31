@@ -12,7 +12,7 @@ chrome=1是chrome为IE浏览器用户写的一个外挂，它的意思是如果�
 
 ```
 
-#### <a href="clearfix.html">清除浮动</a>
+#### <a href="./clearfix.html">清除浮动</a>
 
 **子元素浮动后出现的问题**
 1. ie7以下版本模块浮动后不会脱离文档流，后面的块元素不会被它覆盖掉。但是后面的块元素也会紧跟浮动显示在其内容的后面
@@ -46,7 +46,7 @@ chrome=1是chrome为IE浏览器用户写的一个外挂，它的意思是如果�
 
 当多个img或inline-block标签并列显示时周围元素周围有空白空隙
 
-<a href="img-space.html">demo</a>
+<a href="./img-space.html">demo</a>
 
 #### chrome浏览器font-size问题
 
@@ -100,18 +100,18 @@ right:0;
 
 ```
 
-详细请查看<a href="position-fixed.html">Demo</a>
+详细请查看<a href="./position-fixed.html">Demo</a>
 
 
-#### <a href="css-hack.html">浏览器常用的hack</a>
+#### <a href="./css-hack.html">浏览器常用的hack</a>
 
 Hack是针对不同的浏览器去写不同的CSS样式，从而让各浏览器能达到一致的渲染效果，那么针对不同的浏览器写不同的CSS CODE的过程，就叫CSS HACK。这里我整理了自己在项目中遇到的一些hack<a href="css-hack.html">浏览器常用的hack</a>。
 
-1. <a href="css-hack.html#ie">IE常用的hack</a>
-1. <a href="css-hack.html#firefox">Firefox常用的hack</a>
-1. <a href="css-hack.html#webkit">webkit常用的hack</a>
-1. <a href="css-hack.html#opera">欧朋常用的hack</a>
-1. <a href="ie-ifhack.html">HTML条件hack</a>
+1. <a href="./css-hack.html#ie">IE常用的hack</a>
+1. <a href="./css-hack.html#firefox">Firefox常用的hack</a>
+1. <a href="./css-hack.html#webkit">webkit常用的hack</a>
+1. <a href="./css-hack.html#opera">欧朋常用的hack</a>
+1. <a href="./ie-ifhack.html">HTML条件hack</a>
 
 <a href="http://browserhacks.com/">这里</a>你可以查询到针对各种浏览器常用的hack方法。
 
@@ -141,13 +141,13 @@ div{
 #### 数值和中文混写导致错位
 
 本质上是混合的字体到时baseline不统一形成的，所以只要将其设置成块元素设置高度或者行高即可解决
-<a href="ie7ie6-line-height.html">demo演示</a>
+<a href="./ie7ie6-line-height.html">demo演示</a>
 
 #### IE7-li之间产生的空白间隙的BUG
 
 IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG
 
-请查看 <a href="ie7low-liFloat-bug.html">demo</a> 演示 
+请查看 <a href="./ie7low-liFloat-bug.html">demo</a> 演示 
 
 #### 参考
 

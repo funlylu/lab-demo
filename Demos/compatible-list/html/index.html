@@ -755,11 +755,10 @@ MathJax.Hub.Config({
 <a id="user-content-ie-兼容模式" class="anchor" href="#ie-%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IE 兼容模式</h4>
 <p>IE 支持通过特定的 <code>&lt;meta&gt;</code>标签来确定绘制当前页面所应该采用的 IE 版本。除非有强烈的特殊需求，否则最好是设置为 edge mode，从而通知 IE 采用其所支持的最新的模式。
 chrome=1是chrome为IE浏览器用户写的一个外挂，它的意思是如果用户安装了这个外挂，那么在IE浏览器可以用谷歌内盒渲染。。</p>
-<pre><code>&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;
-
-</code></pre>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">meta</span> <span class="pl-e">http-equiv</span>=<span class="pl-s"><span class="pl-pds">"</span>X-UA-Compatible<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>IE=Edge,chrome=1<span class="pl-pds">"</span></span>&gt;
+</pre></div>
 <h4>
-<a id="user-content-清除浮动" class="anchor" href="#%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/clearfix.html">清除浮动</a>
+<a id="user-content-清除浮动" class="anchor" href="#%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="./clearfix.html">清除浮动</a>
 </h4>
 <p><strong>子元素浮动后出现的问题</strong></p>
 <ol>
@@ -793,7 +792,7 @@ chrome=1是chrome为IE浏览器用户写的一个外挂，它的意思是如果�
 <h4>
 <a id="user-content-图片或行内块inline-block元素并列空隙bug" class="anchor" href="#%E5%9B%BE%E7%89%87%E6%88%96%E8%A1%8C%E5%86%85%E5%9D%97inline-block%E5%85%83%E7%B4%A0%E5%B9%B6%E5%88%97%E7%A9%BA%E9%9A%99bug" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>图片或行内块（inline-block）元素并列空隙bug</h4>
 <p>当多个img或inline-block标签并列显示时周围元素周围有空白空隙</p>
-<p><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/img-space.html">demo</a></p>
+<p><a href="./img-space.html">demo</a></p>
 <h4>
 <a id="user-content-chrome浏览器font-size问题" class="anchor" href="#chrome%E6%B5%8F%E8%A7%88%E5%99%A8font-size%E9%97%AE%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>chrome浏览器font-size问题</h4>
 <p>Chrome 的中文版桌面浏览器会默认设定页面的最小字号是12px的限制。
@@ -838,24 +837,24 @@ right:0;
 *right: auto;  /* 兼容ie7*/
 
 </code></pre>
-<p>详细请查看<a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/position-fixed.html">Demo</a></p>
+<p>详细请查看<a href="./position-fixed.html">Demo</a></p>
 <h4>
-<a id="user-content-浏览器常用的hack" class="anchor" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B8%B8%E7%94%A8%E7%9A%84hack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/css-hack.html">浏览器常用的hack</a>
+<a id="user-content-浏览器常用的hack" class="anchor" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B8%B8%E7%94%A8%E7%9A%84hack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="./css-hack.html">浏览器常用的hack</a>
 </h4>
-<p>Hack是针对不同的浏览器去写不同的CSS样式，从而让各浏览器能达到一致的渲染效果，那么针对不同的浏览器写不同的CSS CODE的过程，就叫CSS HACK。这里我整理了自己在项目中遇到的一些hack<a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/css-hack.html">浏览器常用的hack</a>。</p>
+<p>Hack是针对不同的浏览器去写不同的CSS样式，从而让各浏览器能达到一致的渲染效果，那么针对不同的浏览器写不同的CSS CODE的过程，就叫CSS HACK。这里我整理了自己在项目中遇到的一些hack<a href="./css-hack.html">浏览器常用的hack</a>。</p>
 <ol>
-<li><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/css-hack.html#ie">IE常用的hack</a></li>
-<li><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/css-hack.html#firefox">Firefox常用的hack</a></li>
-<li><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/css-hack.html#webkit">webkit常用的hack</a></li>
-<li><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/css-hack.html#opera">欧朋常用的hack</a></li>
-<li><a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/ie-ifhack.html">HTML条件hack</a></li>
+<li><a href="./css-hack.html#ie">IE常用的hack</a></li>
+<li><a href="./css-hack.html#firefox">Firefox常用的hack</a></li>
+<li><a href="./css-hack.html#webkit">webkit常用的hack</a></li>
+<li><a href="./css-hack.html#opera">欧朋常用的hack</a></li>
+<li><a href="./ie-ifhack.html">HTML条件hack</a></li>
 </ol>
 <p><a href="http://browserhacks.com/">这里</a>你可以查询到针对各种浏览器常用的hack方法。</p>
 <h4>
 <a id="user-content-ie6下面元素浮动后显示margin边距加倍的问题" class="anchor" href="#ie6%E4%B8%8B%E9%9D%A2%E5%85%83%E7%B4%A0%E6%B5%AE%E5%8A%A8%E5%90%8E%E6%98%BE%E7%A4%BAmargin%E8%BE%B9%E8%B7%9D%E5%8A%A0%E5%80%8D%E7%9A%84%E9%97%AE%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ie6下面元素浮动后显示margin边距加倍的问题</h4>
 <p>这是ie6一个著名的bug，当一个元素向一边浮动时，其它同一个方向如果有margin的话，ie6就会产生双倍的margin。例 如：</p>
-<pre><code>&lt;div style="float: left;margin-left: 10px;"&gt;&lt;/div&gt;
-</code></pre>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>float: left;margin-left: 10px;<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+</pre></div>
 <p>在ie6下显示会有margin-left:20px的距离用ie6的hack解决</p>
 <pre><code>div{
   width: 200px;
@@ -870,11 +869,11 @@ right:0;
 <h4>
 <a id="user-content-数值和中文混写导致错位" class="anchor" href="#%E6%95%B0%E5%80%BC%E5%92%8C%E4%B8%AD%E6%96%87%E6%B7%B7%E5%86%99%E5%AF%BC%E8%87%B4%E9%94%99%E4%BD%8D" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>数值和中文混写导致错位</h4>
 <p>本质上是混合的字体到时baseline不统一形成的，所以只要将其设置成块元素设置高度或者行高即可解决
-<a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/ie7ie6-line-height.html">demo演示</a></p>
+<a href="./ie7ie6-line-height.html">demo演示</a></p>
 <h4>
 <a id="user-content-ie7-li之间产生的空白间隙的bug" class="anchor" href="#ie7-li%E4%B9%8B%E9%97%B4%E4%BA%A7%E7%94%9F%E7%9A%84%E7%A9%BA%E7%99%BD%E9%97%B4%E9%9A%99%E7%9A%84bug" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IE7-li之间产生的空白间隙的BUG</h4>
 <p>IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG</p>
-<p>请查看 <a href="///A://lamp/htdocs/Demo_blog/src/web-demo/Demos/compatible-list/html/ie7low-liFloat-bug.html">demo</a> 演示</p>
+<p>请查看 <a href="./ie7low-liFloat-bug.html">demo</a> 演示</p>
 <h4>
 <a id="user-content-参考" class="anchor" href="#%E5%8F%82%E8%80%83" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>参考</h4>
 <ol>
