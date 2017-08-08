@@ -16,7 +16,13 @@ body {
 }
 
 
+
+
+
+
 /* 响应式调制 */
+
+
 /* 注：网页是按照1366 x 768 的比例做的*/
 
 
@@ -29,6 +35,10 @@ body {
 }
 
 
+
+
+
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
@@ -36,6 +46,10 @@ body {
         font-size: 150.5%;
     }
 }
+
+
+
+
 
 
 /* Small Devices, Tablets */
@@ -47,6 +61,10 @@ body {
 }
 
 
+
+
+
+
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) and (min-height: 768px) {
@@ -54,6 +72,10 @@ body {
         font-size: 370.5%;
     }
 }
+
+
+
+
 
 
 /* Large Devices, Wide Screens */
@@ -69,6 +91,10 @@ body {
         font-size: 770.5%;
     }
 }
+
+
+
+
 
 
 /*************************css base********************/
@@ -90,6 +116,10 @@ body {
 .clearfix:after {
     clear: both;
 }
+
+
+
+
 
 
 /*************************page-base********************/
@@ -219,6 +249,10 @@ body {
 }
 
 
+
+
+
+
 /*************************end of page-base********************/
 
 
@@ -268,7 +302,7 @@ body {
 
 .section-text .p-title {
     font-size: 0.6rem;
-    transform: translate3d(-100%, 0, 0);
+    /* transform: translate3d(-100%, 0, 0); */
     opacity: 0;
 }
 
@@ -280,6 +314,10 @@ body {
 .section-text.text-l {
     text-align: left;
 }
+
+
+
+
 
 
 /*phone*/
@@ -315,6 +353,10 @@ body {
 }
 
 
+
+
+
+
 /*page-1*/
 
 .pt-page-1 .section-text {
@@ -335,6 +377,10 @@ body {
     box-sizing: border-box;
     padding-top: 1.3rem;
 }
+
+
+
+
 
 
 /*页面1的导航*/
@@ -365,7 +411,7 @@ body {
     float: right;
 }
 
-.page-header .btns > .btn {
+.page-header .btns>.btn {
     display: inline-block;
     height: 0.6em;
     padding: 0.6em;
@@ -388,6 +434,10 @@ body {
     display: none;
     background-color: #FE2454;
 }
+
+
+
+
 
 
 /*二维码*/
@@ -421,7 +471,7 @@ body {
     opacity: 0.9;
 }
 
-.qr-mask .app{
+.qr-mask .app {
     display: block;
     position: absolute;
     height: 40%;
@@ -431,12 +481,14 @@ body {
     transform: scale(.7);
     transition: all .6s;
 }
-.app img{
+
+.app img {
     width: 100%;
     height: 100%;
 }
-.qr-mask .app-IOS{
-  top: 50%;
+
+.qr-mask .app-IOS {
+    top: 50%;
 }
 
 .qr-mask .app:hover {
@@ -449,6 +501,10 @@ body {
     left: 0.5rem;
     font-size: 0.28em;
 }
+
+
+
+
 
 
 /*carousel*/
@@ -473,6 +529,10 @@ body {
     animation-duration: 3s;
     animation-name: toLeft;
 }
+
+
+
+
 
 
 /*phone轮播*/
@@ -516,6 +576,10 @@ body {
 }
 
 
+
+
+
+
 /*phone轮播动画*/
 
 .carousel {
@@ -541,6 +605,10 @@ body {
         left: -300%;
     }
 }
+
+
+
+
 
 
 /*page-2*/
@@ -615,6 +683,10 @@ body {
 }
 
 
+
+
+
+
 /*文字动画*/
 
 .animated {
@@ -640,6 +712,7 @@ body {
 @keyframes fadeShake {
     from {
         transform: translate3d(-100%, 0, 0);
+        opacity: 0;
     }
     10% {
         opacity: 0.5;
@@ -669,6 +742,10 @@ body {
     animation-name: fadeShake;
     animation-duration: 3s;
 }
+
+
+
+
 
 
 /* footer */
