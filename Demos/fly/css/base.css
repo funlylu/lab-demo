@@ -1,0 +1,453 @@
+  /*******
+*页面样式
+********/
+
+  html,
+  body,
+  div,
+  span,
+  header,
+  ul,
+  li,
+  footer,
+  i,
+  em,
+  h3,
+  h4,
+  h2,
+  p,
+  input,
+  a {
+      margin: 0;
+      padding: 0;
+  }
+
+  html {
+      font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+      font-size: 625%;
+      /* 避免中中文版 chrome 下面使用 rem 相对单位受到最小字号 12px 的限制，
+    这里html的字号我们设置成 100px
+    单位换算：10px=0.1rem */
+  }
+  /* 选中元素的背景色设置 */
+
+   ::selection {
+      text-shadow: none;
+      background-color: #b3d4fc;
+  }
+
+  li {
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:hover {
+      cursor: pointer;
+  }
+
+  body {
+      font-size: 0.14rem;
+  }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit*/  
+    color:#ccc;  
+}  
+input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+    color:#ccc;  
+}  
+input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */  
+    color:#ccc;  
+}  
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */  
+    color:#ccc;  
+}
+  /* ***************
+* 工具样式
+********* */
+  /* 浮动带来的负面影响
+ 1.父级容器高度塌陷
+ 2.浮动元素会覆盖 它后面的元素
+ */
+  /* 清除浮动 */
+
+  clearfix {
+      z-index: *zoom: 1;
+      /* ie7 以下版本的浮动清除,不考虑兼容的可以省略 */
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: " ";
+      /* .clearfix:before 是为了防止当前元素和上外边距和它上面的上外边距的 
+    叠加这里我们称为空白崩溃如果没有这个需求不加也是可以的。*/
+  }
+
+  .clearfix:after {
+      clear: both;
+  }
+
+  .pull-right {
+      float: right !important;
+  }
+
+  .pull-left {
+      float: left !important;
+  }
+
+  .text-center {
+      text-align: center !important;
+  }
+  /* fly page css */
+
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+
+  /* header */
+.fly-header{
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+}
+ .fly-login{
+    padding: 10px 0;
+    vertical-align: middle;
+ }
+.fly-logo{
+    color: #4796d1;
+    font-size: 20px;
+}
+.fly-btn{
+    height: 20px;
+    line-height: 20px;
+    padding: 3px 1.3em;
+    color: #fff;
+    background-color: #4796d1;
+    border-radius: 20px;
+}
+.fly-login-btn .fly-btn +.fly-btn{
+    margin-left: 15px;
+}
+.fly-btn.login{
+    background-color: #9544ab;
+}
+
+.fly-title-slogan{
+    color:  #4796d1;
+    font-weight: normal;
+    font-size: 26px;
+}
+.fly-input{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 32px;
+    padding-left: 5px;
+    width: 160px;
+}
+.fly-search-input {
+    margin-top: 30px;
+}
+.fly-search-input input{
+    width: 34%;
+    height: 35px;
+    border-color:#4796d1; 
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.fly-slogans-ul{
+    margin: 30px 0;
+}
+.fly-slogans-ul>li{
+    display:inline-block;
+    text-align: left;
+
+}
+.fly-slogans-ul>li+li{
+    margin-left: 50px;
+}
+.fly-icon{
+    display: inline-block;
+    margin-right: 8px;
+}
+.fly-slogans-li .fly-icon{
+    min-height: 40px;
+    width: 40px;
+    border: 1px solid #4796d1;
+    border-radius: 50%;
+}
+.fly-slogans-li .title{
+    color: #555;
+}
+.fly-slogans-li .deil{
+    color: #777;
+}
+.search-form{
+    margin: 0 auto;
+    width: 50%;
+    min-width: 728px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px 30px;
+    padding-bottom: 30px;
+}
+
+
+/* nav */
+.fly-board{
+    background: #4796d1;
+    color: #fff;
+}
+
+.fly-nav{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+.fly-nav .nav-item {
+    display: inline-block;
+}
+.fly-nav .nav-item a{
+    display: inline-block;
+    padding: 10px 3em;
+    color: #fff;
+}
+.fly-nav .nav-item.active a{
+    background-color: #50ade8;
+}
+
+.fly-board-body .title{
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.fly-search-btn{
+    box-sizing: border-box;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #ff8b00;
+    border-width: 0px;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.search-form{
+    position: relative;
+}
+.form-tab{
+    position: absolute;
+    top: -26px;
+    left: 0px;
+}
+.form-tab .tab-item{
+    position: relative;
+    float: left;
+}
+.form-tab .tab-item.active .tab-label{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.form-tab .tab-label{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 30px;
+}
+.form-tab input{
+    opacity: 0;
+    position: absolute;
+    height: 32px;
+    width: 116px;
+    top: -6px;
+    left: 0;
+    z-index: 9999;
+}
+
+.form-option.way{
+    padding: 10px 10px;
+    height: 32px;
+    line-height: 32px;
+}
+.form-option .fly-label{
+    margin-right: 10px;
+    position: relative;
+    top:-4px;
+}
+.fly-radio{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.fly-board-body{
+    padding: 80px 0;
+}
+
+/* main */
+.fly-main{
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.fly-main-content{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.fly-main-item .tab-title{
+    border-bottom:1px solid #4796d1;
+}
+.fly-main-item .tab-item{
+    float: left;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 30px;
+    position: relative;
+}
+.fly-main-item .tab-item.active{
+    background: #4796d1;
+    color: #fff;
+}
+.fly-main-item .tab-item .icon{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50% 0;
+    background: #fff;
+}
+.fly-main-item .tab-content{
+    padding-top: 20px;
+}
+.fly-main-item .info-item{
+    background: #fff;
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+.fly-main-item .info-item +.info-item{
+    margin-left: 10px;
+}
+.fly-main-item .info-item .title .icon{
+    background: #4796d1;
+    color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.fly-main-item .info-item .deil >p,
+.fly-main-item .info-item .title >p{
+    padding: 8px 0;
+}
+.fly-main-item .info-item .go .icon{
+    background-color: #7ab7e4;
+}
+.fly-main-item .info-item > .deil{
+    border-left: 1px  dotted #ccc;
+    padding:0  10px;
+}
+.fly-main-item .info-item > .deil .price{
+    color: #f4a145;
+}
+.fly-main-item .info-item > .deil .fly-label.deil{
+    cursor: pointer;
+}
+.price-data{
+    font-size: 28px;
+}
+.fly-label{
+    color: #ccc;
+}
+.fly-row{
+    margin-top: 10px;
+}
+
+.fly-main-item +.fly-main-item{
+    margin-top: 10px;
+}
+.fly-main-label:before,
+.fly-main-label:after{
+    display: inline-block;
+    content: "";
+    height: 1px;
+    background-color: #d6d4d4;
+    width: 31.5%;
+}
+.fly-main-label{
+    text-align: left;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.fly-slogin{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.fly-slogin .item{
+  float: left;
+  width: 20%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.fly-slogin .fly-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #4796d1;
+}
+.fly-slogin .text{
+    position: relative;
+    top: -15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.fly-email{
+    background-color: #4796d1;
+    color: #fff;
+    padding: 20px 0;
+}
+.fly-email .title{
+    font-size: 28px;
+    font-weight: bold;
+    word-spacing: 0.5em;
+    margin-bottom: 15px;
+}
+.fly-email .text{
+    font-size: 16px;
+}
+.email-box{
+    margin-top: 20px;
+}
+.email-box .label{
+    margin-bottom: 10px;
+}
+.email-box .box>input{
+    padding-left: 1em;
+}
+.fly--send-btn{
+    background: #fff;
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+    border-width: 0px;
+    padding: 0 10px;
+    color: #4796d1;
+    cursor: pointer;
+}
+.fly-connect{
+    margin: 20px;
+}
+.fly-connect .fly-info>li{
+    float: left;
+    width: 25%;
+}
+.fly-copy-right{
+    border-top: 1px solid #ccc;
+    width: 70%;
+    margin: 15px  auto;
+    padding-top: 20px;
+    color: #aaa;
+    font-size: 0.12rem;
+
+}
